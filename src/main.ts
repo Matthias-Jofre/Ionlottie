@@ -23,8 +23,12 @@ import '@ionic/vue/css/display.css';
 /* Theme variables */
 import './theme/variables.css';
 
+import Vue3Lottie from 'vue3-lottie'
+import 'vue3-lottie/dist/style.css'
+
 const app = createApp(App)
   .use(IonicVue)
+  .use(Vue3Lottie)
   .use(router);
   
 router.isReady().then(() => {
